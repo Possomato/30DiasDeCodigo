@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 01</title>
+</head>
+<body>
+    <p>
+        Dia 3 - Missão: Calcular a média de venda à partir dos valores vendidos em cada um dos meses do 1* trim. de 2018 de um vendedor.
+    </p>
+    <script>
+        let vendedor, jan, fev, mar, media
+        vendedor = prompt('Digite o nome do vendor: ')
+        jan = prompt('Valores de janeiro: ')
+        fev = prompt('Valores de fevereiro: ')
+        mar = prompt('Valores de março: ')
+        media = (parseFloat(jan) + parseFloat(fev) + parseFloat(mar)) / 3
+        alert(`${vendedor} sua média de vendas desse trimeste é ${media}`)
+    </script>
+</body>
+</html>

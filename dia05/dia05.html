@@ -8,15 +8,17 @@
 </head>
 <body>
     <p>
-        Dia 4 - Missão: Validar se um candidato pode ou não iniciar o processo de CNH
+        Dia 5 - Missão: Verificar se é dia, tarde ou noite e mostrar uma mensagem personalizada
     </p>
     <script>
-        let idade = prompt('Quantos anos você tem?')
+        let dataCompleta = new Date
 
-        if(idade >= 18){
-            alert('Você está apto para ter a CNH')
+        if (dataCompleta.getHours() >= 5 && dataCompleta.getHours() <=12){
+            alert(`Agora são ${dataCompleta.getHours()} horas, BOM DIA!`)
+        } else if (dataCompleta.getHours() > 12 && dataCompleta.getHours() <= 19){
+            alert(`Agora são ${dataCompleta.getHours()} horas, BOA TARDE!`)
         } else{
-            alert('Tu é muito jovem para ter uma CNH')
+            alert(`Agora são ${dataCompleta.getHours()} horas, BOA NOITE!`)
         }
     </script>
 </body>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 05</title>
+</head>
+<body>
+    <p>
+        Dia 6 - Missão: Calcular as horas extras de um funcionário a partir das horas semanais trabalhadas.Considerar a carga horária de 44horas/semana
+    </p>
+    <script>
+        const horasTrabalhadas = prompt('Quantas horas você trabalhou essa semana?')
+
+        const horasExtras = horasTrabalhadas - 44
+
+        if (horasExtras >= 1){
+            alert(`Considerando a carga horária de 44 horas, você fez ${horasExtras} horas extras`)
+        } else if (horasExtras < 0){
+            alert(`Considerando a carga horária de 44 horas, você está ${horasExtras * -1} horas negativas`)
+        } else {
+            alert(`Considerando a carga horária de 44 horas, você está em dia!`)
+        }
+    </script>
+</body>
+</html>

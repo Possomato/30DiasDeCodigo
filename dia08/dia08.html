@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 08</title>
+</head>
+<body>
+    <p>
+        Dia 8 - Missão: Efetuar uma das 4 operações matemáticas básicas
+    </p>
+    <script>
+        metodo = prompt(`Escolha uma das operações:
+Soma = 1
+Subtração = 2
+Multiplicação = 3
+Divisão = 4`)
+        valor1 = prompt('Digite o primeiro valor: ')
+        valor2 = prompt('Digite o segundo valor: ')
+        let conta = ''
+
+        if (metodo == 1){
+            let conta = parseInt(valor1) + parseInt(valor2)
+            alert(`O resultado de ${valor1} + ${valor2} é ${conta}`)
+        } else if (metodo == 2){
+            let conta = parseInt(valor1) - parseInt(valor2)
+            alert(`O resultado de ${valor1} - ${valor2} é ${conta}`)
+        } else if (metodo == 3){
+            let conta = parseInt(valor1) * parseInt(valor2)
+            alert(`O resultado de ${valor1} * ${valor2} é ${conta}`)
+        } else if (metodo == 4){
+            let conta = parseInt(valor1) / parseInt(valor2)
+            alert(`O resultado de ${valor1} / ${valor2} é ${conta}`)
+        } else{
+            alert('ERRO! TENTE NOVAMENTE')
+        }
+    </script>
+</body>
+</html>

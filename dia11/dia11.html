@@ -8,9 +8,17 @@
 </head>
 <body>
     <p>
-        Dia 11 - Missão: 
+        Dia 11 - Missão: Exibindo uma mensagem várias vezes
     </p>
     <script>
+        let contador = 1
+        let numeroRepeticao = prompt('Informe o número de vezes que a mensagem deve aparecer')
+        let mensagem = prompt('Digite a mensagem')
+
+        while (contador < numeroRepeticao){
+            alert(mensagem)
+            contador += 1
+        }
     </script>
 </body>
 </html>

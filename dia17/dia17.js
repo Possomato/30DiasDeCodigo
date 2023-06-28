@@ -1,1 +1,1 @@
-// ver história do javascript
+// história do javascript

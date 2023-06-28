@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 18</title>
+</head>
+
+<body>
+    <p>
+        Dia 18 - Missão: Dicionário de animais
+    </p>
+    <script>
+        let continuar = 's'
+        let animais = new Array(4)
+
+        animais[0] = 'Cuidado, uma picada radioativa pode te transformar em um super-herói'
+        animais[1] = 'Escorpião é o oitavo signo astrológico do zodíaco'
+        animais[2] = 'Cobra é uma denominação genérica, utilizada frequentemente na língua portuguesa como sinônimo para serperte'
+        animais[3] = 'Na linguagem vulgar, chama-se lagarta ao primeiro estágio larval dos insetos da ordem dos Lepidoptera'
+
+        while (continuar == 's') {
+            let AnimalExibir = prompt(`Qual animal deseja? (escolha o núumero representativo)
+                0 - Aranha
+                1 - Escorpião
+                2 - Cobra
+                3 - Lagarta`)
+
+            switch (AnimalExibir) {
+                case '0':
+                    alert(animais[0])
+                    break
+                case '1':
+                    alert(animais[1])
+                    break
+                case '2':
+                    alert(animais[2])
+                    break
+                case '3':
+                    alert(animais[3])
+                    break
+                default:
+                    alert('valor incorreto, digite novamente')
+                    break
+            }
+
+            continuar = prompt('Deseja continuar? [s / n]')
+        }
+
+        alert('tchau :D')
+    </script>
+</body>
+
+</html>

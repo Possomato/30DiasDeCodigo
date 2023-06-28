@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 19</title>
+</head>
+
+<body>
+    <p>
+        Dia 19 - Missão: Controle de cursos
+    </p>
+    <script>
+        const nome = prompt('Digite o nome do curso:')
+        const codigo = prompt('Digite o código do curso:')
+        let conteudo = []
+        let escolha = 's'
+
+        while(escolha == 's'){
+            let inserirConteudo = prompt('Digite o conteúdo do curso:')
+            conteudo.push(inserirConteudo)
+
+            escolha = prompt('Deseja colocar mais conteúdos ao curso? [s/n]')
+        }
+
+        alert(`
+        Curso: ${nome}
+        Código: ${codigo}
+        Conteúdo: ${conteudo}
+        `)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 29</title>
+</head>
+
+<body>
+    <p>
+        Dia 29 - Missão: classificação de filmes
+    </p>
+
+    <script>
+        const filmes = ['conan', 'barbie', 'bolt', 'matrix'];
+        let classificao = [];
+    
+        function Classificacao() {
+            alert('Informe uma classificação de 1 a 5 estrelas para cada filme');
+            for (let contador = 0; contador < filmes.length; contador++) {
+                classificao[contador] = parseInt(prompt('Informe uma classificação de 1 a 5 estrelas para o filme ' + filmes[contador]));
+            }
+        }
+    
+        function ExibirClassificacoes() {
+            let numEstrelas;
+            for (let contador = 0; contador < filmes.length; contador++) {
+                numEstrelas = '';
+    
+                for (let contadorEstrelas = 0; contadorEstrelas < classificao[contador]; contadorEstrelas++) {
+                    numEstrelas += '*';
+                }
+    
+                alert(`${filmes[contador]} ${numEstrelas} estrelas`);
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

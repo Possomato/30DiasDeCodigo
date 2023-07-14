@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 28</title>
+</head>
+
+<body>
+    <p>
+        Dia 28 - Missão: acréscimo e desconto
+    </p>
+
+    <script>
+        function operacao(total, porcentagem, desconto){
+            const valorPorcentagem = porcentagem / 100 + total
+            let valorTotal
+
+            if(operacao == 'acrescimo'){
+                valorTotal = total + valorPorcentagem
+            } else{
+                valorTotal = total - valorPorcentagem
+            }
+
+            console.log(`total a pagar: ${valorTotal.toFixed(2)}`)
+        }
+  
+        // digite 'operacao(argumento, argumento, argumento)' no console do navegador
+    </script>
+</body>
+
+</html>
